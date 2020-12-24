@@ -1,1 +1,3 @@
 # us-diversity
+
+Note that these notebooks cannot be ran yet, as I'm still piecing them together.  However, no extra data is needed.  Installations, however...

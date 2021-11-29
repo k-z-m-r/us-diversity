@@ -1,8 +1,7 @@
 # IMPORT STATEMENTS
 import pandas as pds
-import numpy as np 
 
-def get_census_df(year = 2017, remove_cols = True):
+def get_data(year = 2017, remove_cols = True):
 
     '''
         year -> the year that the American Community Survey (ACS) was conducted; choices are 2015 and 2017.
@@ -23,7 +22,7 @@ def get_census_df(year = 2017, remove_cols = True):
 
         # A simple fix, but necessary for processing.
         df['CountyId'][no_leading_zero] = '0' + df[no_leading_zero]['CountyId']
-        
+
         return df
 
 
@@ -31,4 +30,4 @@ def get_census_df(year = 2017, remove_cols = True):
         print('Incorrect year or data not found!')
         return None
 
-print(get_census_df().head())
+print(get_data().head())
